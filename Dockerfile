@@ -7,13 +7,3 @@ FROM scratch
 WORKDIR /app
 COPY --from=builder /app/bin/fullcyclerocks.bin .
 CMD [ "/app/fullcyclerocks.bin" ]
-
-####################
-# Example commands #
-####################
-
-# To build:
-#   docker build -t alexandropatrik/golang-bin:v1 .
-
-# To run:
-#   docker run alexandropatrik/golang-bin:v1
